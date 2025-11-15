@@ -18,9 +18,4 @@ Uma base de API construída com **NestJS**, oferecendo recursos modernos para de
 - [JWT](https://jwt.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## Como rodar o projeto
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
