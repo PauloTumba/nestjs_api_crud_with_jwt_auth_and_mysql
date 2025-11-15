@@ -1,3 +1,4 @@
+
 # NestJS API Base
 
 Uma base de API construída com **NestJS**, oferecendo recursos modernos para desenvolvimento rápido de aplicações backend. Inclui autenticação JWT, integração com **Prisma ORM** e banco de dados **MySQL**.
@@ -17,5 +18,3 @@ Uma base de API construída com **NestJS**, oferecendo recursos modernos para de
 - [MySQL](https://www.mysql.com/)
 - [JWT](https://jwt.io/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-
