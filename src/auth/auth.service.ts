@@ -57,7 +57,7 @@ export class AuthService {
       // Gera o token JWT usando o SECRET_KEY do .env
       access_token: this.jwtService.sign(payload, {
         secret: process.env.SECRET_KEY, // chave privada do token
-        expiresIn: '1d',                // define validade de 1 dia
+        expiresIn: '1m',                // define validade de 1 minuto
       }),
     };
   }

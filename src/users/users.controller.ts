@@ -1,5 +1,5 @@
 // ...existing code...
-import { Body, Controller, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Patch, Post, Put, UseGuards } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user-dto';
 import { UpdateUserDto } from './dto/update-user-dto';
@@ -25,7 +25,7 @@ export class UsersController {
     return this.usersService.createUser(createUserDto);
   }
 
-  @Put(':id')
+  @Patch(':id')
   async replace(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
     console.log('Substituindo ID:', id);
     console.log('Body recebido:', updateUserDto);
