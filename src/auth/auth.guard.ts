@@ -22,7 +22,9 @@ export class AuthGuard implements CanActivate {
     const authorization = this.extractTokenFromHeader(request);
 
     // Se não houver token, lança erro 401
-    if (!authorization) throw new UnauthorizedException('Token is required');
+    if (!authorization) {
+      throw new UnauthorizedException('Token is required');
+    }
 
     console.log('Headers:', authorization); // DEBUG → mostra apenas o token
 
